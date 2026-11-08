@@ -22,6 +22,18 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/navigation">Navigation</RouterLink>
         <RouterLink :to="{ name: 'named-views' }">Named Views</RouterLink>
         <RouterLink :to="{ name: 'redirect-and-alias' }">Redirect and Alias</RouterLink>
+
+        <RouterLink :to="{ name: 'passing-props-parent1' }">Passing-props-parent1</RouterLink>
+        <RouterLink :to="{ name: 'passing-props-parent2', params: { name: 'tt', age: 18 } }"
+          >Passing-props-parent2</RouterLink
+        >
+
+        <RouterLink to="/navigation-guards">Navigation-guards</RouterLink>
+        <RouterLink to="/navigation-guards-2">Navigation-guards-2</RouterLink>
+
+        <RouterLink to="/router-Meta">Router-Meta</RouterLink>
+
+        <RouterLink to="/vuebase">vuebase</RouterLink>
       </nav>
     </div>
   </header>
